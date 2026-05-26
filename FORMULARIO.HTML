@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-br"> <!-- Tag raiz do documento HTML com atributo de idioma -->
+
+<head> <!-- Tag de metadados para definir o idioma do documento -->
+
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title> Formulário para Contato </title> <!-- Título da página exibido na aba do navegador -->
+    
+
+</head>
+
+<body>
+
+<header>
+    <h1>Formulário de Contato</h1> <!-- Título principal da página -->      
+
+</header>
+
+<section id="Form"> <!-- Tag de seção para o formulário de contato -->
+    <h2>Preencha as informações:</h2> <!-- Subtítulo da seção -->
+
+    <form action="processar_formulario.php" method="post"> <!-- Tag de formulário com ação e método definidos -->
+        <label for="nome">Nome Completo:</label> <br> <!-- Rótulo para o campo de nome -->
+        <input type="text" id="nome" name="nome" required> <!-- Campo de entrada para o nome, obrigatório -->
+
+        <br><br> <!-- Quebra de linha para espaçamento -->
+
+        <label for="email">Email:</label> <br> <!-- Rótulo para o campo de email -->
+        <input type="email" id="email" name="email" required> <!-- Campo de entrada para o email, obrigatório e do tipo email -->
+
+        <br><br> <!-- Quebra de linha para espaçamento -->
+
+        <label for="idade">Idade:</label> <br> <!-- Rótulo para o campo de idade -->
+        <input type="number" id="idade" name="idade" min="18" required> <!-- Campo de entrada para a idade, obrigatório e do tipo número -->
+
+        <br>
+        <br> <!-- Quebra de linha para espaçamento -->
+</select>
+
+<section id="Materias"> <!-- Tag de seção para as matérias -->
+        <label for="assunto">Qual Materia está se candidatando para lecionar:</label> <br>   <!-- Rótulo para o campo de assunto -->
+         <select name="assunto" id="assunto"> <!-- Campo de seleção para o assunto -->
+                    <option value="matematica">Matemática</option> <!-- Opção para lecionar -->
+                    <option value="portugues">Português</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="ciencias">Ciências</option>
+                    <option value="historia">História</option>
+                    <option value="geografia">Geografia</option>
+                    <option value="artes">Artes</option>
+</select>
+<br>
+        <br>
+
+        <section id="Escolaridade"> <!-- Tag de seção para o nível de escolaridade -->
+
+        <label for="escolaridade">Nivel de Escolaridade :</label> <br><!-- Rótulo para o campo de Escolaridade -->
+         <select name="escolaridade" id="escolaridade"> <!-- Campo de seleção para o Escolaridade -->
+                    <option value="ensino superior completo">Ensino Superior Completo</option> <!-- Opção para lecionar -->
+                    <option value="cursando mestrado">Cursando Mestrado</option>
+                    <option value="mestrado completo">Mestrado Completo</option>
+                    <option value="cursando doutorado">Cursando Doutorado</option>
+                    <option value="doutorado completo">Doutorado Completo</option>
+
+</select>
+<br>
+        <br>
+ <section id="Turnos"> <!-- Tag de seção para o nível de Turnos -->
+    <label for="turnos">Turnos Disponíveis:</label> <br>
+       <input type="checkbox" id="manha" name="manha" value="manha"> <!-- Campo de seleção para o turno da manhã -->
+  <label for="manha"> Manhã</label><br> <!-- Rótulo para o campo de seleção da manhã -->
+  <input type="checkbox" id="tarde" name="tarde" value="tarde"> <!-- Campo de seleção para o turno da tarde -->
+  <label for="tarde"> Tarde</label><br> <!-- Rótulo para o campo de seleção da tarde -->
+  <input type="checkbox" id="noite" name="noite" value="noite"> <!-- Campo de seleção para o turno da noite -->
+  <label for="noite"> Noite</label><br> <!-- Rótulo para o campo de seleção da noite -->
+
+</section>
+  
+
+        <br> <!-- Quebra de linha para espaçamento -->
+
+        <label for="Descricao">Descrição sobre si mesmo:</label> <br><!-- Rótulo para o campo de mensagem -->
+        <textarea id="Descricao" name="Descricao" rows="4" cols="40" maxlength="200" required></textarea> <!-- Área de texto para a mensagem, obrigatória -->
+
+        <br>
+                    
+</select>
+        <br> <!-- Quebra de linha para espaçamento -->
+
+
+
+        <br>
+        <br> <!-- Quebra de linha para espaçamento -->
+
+        <input type="submit" value="Enviar Formulário"> <!-- Botão de envio do formulário --> 
+    </form>
+<footer> <!-- Tag de rodapé para informações de contato e direitos autorais -->
+    <p>&copy; 2026 Felipe Renan. Todos os direitos reservados.</p> <!-- Parágrafo com direitos autorais -->
+
+
+
+
+</body>
+
+
+</html>
